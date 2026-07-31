@@ -1,4 +1,16 @@
 aid: open-presence
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/open-presence.png
 name: Open Presence
 description: Open Presence is a company surfaced as a portfolio company of 500-global and added to the
   API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,11 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-status: acquired
+x-status-note: presence.io (Presence, a student-engagement / campus-life platform)
+  redirects to Modern Campus (www.presence.io CNAMEs to moderncampus.com). No public
+  developer API, documentation, or portal was found. No API surface to enrich.
 tags:
 - Company
 apis: []
@@ -21,5 +37,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/open-presence-domain-security.yml
 - type: Website
   url: https://presence.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
